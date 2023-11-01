@@ -1,0 +1,82 @@
+.flashSale {
+  background-color: rgba(253, 114, 21, 0.862);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: normal;
+  margin: 10px;
+  height: 38px;
+  width: fit-content;
+  padding: 0 30px;
+}
+/* .smallText{
+margin: 0 1px;
+} */
+.timerDiv > div {
+  display: flex;
+}
+
+.flashSaleTitle {
+  text-transform: capitalize;
+
+  font-weight: 900;
+}
+
+.timerDiv {
+  display: flex;
+  font-weight: 900;
+  text-align: center;
+  align-items: center;
+}
+
+.countDown {
+  border-radius: 5px;
+  /* margin: 0; 	 */
+  width: 25px;
+}
+
+.flashSale,
+.timerDiv,
+.countDown {
+  font-family: "Gotham";
+  color: #fff;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .flashSale {
+    padding: 0 8px;
+  }
+
+  .flashSale,
+  .timerDiv,
+  .countDown {
+    font-size: 12px;
+  }
+
+  .countDown {
+    width: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .flashSale,
+  .timerDiv,
+  .countDown {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .flashSale {
+    padding: 0 6px;
+  }
+
+  .flashSale,
+  .timerDiv,
+  .countDown {
+    font-size: 10px;
+  }
+}
