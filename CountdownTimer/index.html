@@ -7,6 +7,18 @@
     <title>Countdown Timer</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
+        .timerContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            border: 2px solid brown;
+            border-radius: 10px;
+            width: max-content;
+            padding: 10px;
+        }
+
         .flashSale {
             background-color: rgba(253, 114, 21, 0.862);
             border-radius: 8px;
@@ -95,25 +107,37 @@
 </head>
 
 <body>
-    <div class="flashSale">
-        <div class="flashSaleTitle">Flash Sale</div>
-        <div class="timerDiv"></div>
+    <div class="timerContainer">
+
+        <div>
+            <div>
+                <h2>Create a multiple countdown timer</h2>
+                <h2>Using one deadline</h2>
+            </div>
+        </div>
+        <div>
+
+            <div class="flashSale">
+                <div class="flashSaleTitle">Flash Sale</div>
+                <div class="timerDiv"></div>
+            </div>
+            <div class="flashSale">
+                <div class="flashSaleTitle">Flash Sale</div>
+                <div class="timerDiv"></div>
+            </div>
+            <div class="flashSale">
+                <div class="flashSaleTitle">Flash Sale</div>
+                <div class="timerDiv"></div>
+            </div>
+            <!-- You Can Add more timer -->
+        </div>
     </div>
-    <div class="flashSale">
-        <div class="flashSaleTitle">Flash Sale</div>
-        <div class="timerDiv"></div>
-    </div>
-    <div class="flashSale">
-        <div class="flashSaleTitle">Flash Sale</div>
-        <div class="timerDiv"></div>
-    </div>
-    <!-- You Can Add more timer -->
 
     <script>
         function formatTimeWithLeadingZero(number) {
             return number < 10 ? `0${number}` : number;
         }
-        let flashSaleEndDate = "2023-12-01";
+        let flashSaleEndDate = "2027-12-01";
         let flashSaleEndTime = "22:14:00";
         let flashSaleDeadline = new Date(
             `${flashSaleEndDate} ${flashSaleEndTime}`
