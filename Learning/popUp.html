@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .popup {
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            
+            background-color: #f8f5f5;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            color: rgb(180, 243, 54);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="/cart/add">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
+    <input name="id" value="product_id" type="hidden"> <!-- Replace "product_id" with the actual product ID -->
+    <input value="1" name="quantity" type="hidden">
+    <button class="js-ajax-add-to-cart" type="button">Add to Cart</button>
+</form>
+<form method="post" action="/cart/add">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
+    <input name="id" value="product_id" type="hidden"> <!-- Replace "product_id" with the actual product ID -->
+    <input value="1" name="quantity" type="hidden">
+    <button class="js-ajax-add-to-cart" type="button">Add to Cart</button>
+</form>
+<form method="post" action="/cart/add">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
+    <input name="id" value="product_id" type="hidden"> <!-- Replace "product_id" with the actual product ID -->
+    <input value="1" name="quantity" type="hidden">
+    <button class="js-ajax-add-to-cart" type="button">Add to Cart</button>
+</form>
+<form method="post" action="/cart/add">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
+    <input name="id" value="product_id" type="hidden"> <!-- Replace "product_id" with the actual product ID -->
+    <input value="1" name="quantity" type="hidden">
+    <button class="js-ajax-add-to-cart" type="button">Add to Cart</button>
+</form>
+<form method="post" action="/cart/add">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
+    <input name="id" value="product_id" type="hidden"> <!-- Replace "product_id" with the actual product ID -->
+    <input value="1" name="quantity" type="hidden">
+    <button class="js-ajax-add-to-cart" type="button">Add to Cart</button>
+</form>
+<form method="post" action="/cart/add">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
+    <input name="id" value="product_id" type="hidden"> <!-- Replace "product_id" with the actual product ID -->
+    <input value="1" name="quantity" type="hidden">
+    <button class="js-ajax-add-to-cart" type="button">Add to Cart</button>
+</form>
+<form method="post" action="/cart/add">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
+    <input name="id" value="product_id" type="hidden"> <!-- Replace "product_id" with the actual product ID -->
+    <input value="1" name="quantity" type="hidden">
+    <button class="js-ajax-add-to-cart" type="button">Add to Cart</button>
+</form>
+<form method="post" action="/cart/add">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
+    <input name="id" value="product_id" type="hidden"> <!-- Replace "product_id" with the actual product ID -->
+    <input value="1" name="quantity" type="hidden">
+    <button class="js-ajax-add-to-cart" type="button">Add to Cart</button>
+</form>
+<form method="post" action="/cart/add">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
+    <input name="id" value="product_id" type="hidden"> <!-- Replace "product_id" with the actual product ID -->
+    <input value="1" name="quantity" type="hidden">
+    <button class="js-ajax-add-to-cart" type="button">Add to Cart</button>
+</form>
+<form method="post" action="/cart/add">
+    <input type="hidden" name="form_type" value="product">
+    <input type="hidden" name="utf8" value="✓">
+    <input name="id" value="product_id" type="hidden"> <!-- Replace "product_id" with the actual product ID -->
+    <input value="1" name="quantity" type="hidden">
+    <button class="js-ajax-add-to-cart" type="button">Add to Cart</button>
+</form>
+
+<div class="popup" id="popup">Product added to the cart!</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Function to show a popup message
+        function showPopupMessage() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+    
+            // Automatically remove the popup after a few seconds
+            setTimeout(function () {
+                popup.style.display = "none";
+            }, 2000); // Adjust the duration as needed
+        }
+    
+        // Attach an event listener to all "Add to Cart" buttons
+        var addToCartButtons = document.querySelectorAll(".js-ajax-add-to-cart");
+        addToCartButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                // Call the function to show the popup message
+                showPopupMessage();
+            });
+        });
+    });
+    
+</script>
+</body>
+</html>
